@@ -5,7 +5,7 @@ const Footer = () => {
     <footer className="bg-[#1F1F1F] text-white py-16">
       <div className="max-w-6xl mx-auto px-4">
         {/* Main Footer Content */}
-        <div className="grid grid-cols-1 md:grid-cols-6 gap-8 mb-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-6 gap-8 mb-12">
           {/* Logo Column */}
           <div className="md:col-span-1">
             <div className="mb-4">
@@ -165,7 +165,9 @@ const Footer = () => {
           <div className="md:col-span-1">
             <h3 className="text-lg font-medium mb-4">Contact us</h3>
             <ul className="space-y-3">
-              <li className="text-gray-300">support@cyberdeep360.com</li>
+              <li className="text-gray-300 break-words">
+                support@cyberdeep360.com
+              </li>
               <li className="text-gray-300">+91-8982770027</li>
             </ul>
           </div>
@@ -174,7 +176,7 @@ const Footer = () => {
         {/* Bottom Footer with Copyright and Social Links */}
         <div className="pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center">
           <div className="mb-4 md:mb-0">
-            <p className="text-gray-400">
+            <p className="text-gray-400 text-center md:text-left">
               © 2024 Copyright, All Right Reserved@CyberDeep360
             </p>
           </div>

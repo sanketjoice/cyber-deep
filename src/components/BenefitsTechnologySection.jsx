@@ -11,7 +11,7 @@ const BenefitsTechnologySection = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {/* First Column */}
-          <div className="space-y-6 flex flex-col items-center md:items-start">
+          <div className="space-y-6 flex flex-col items-center">
             {/* 99% Accuracy Card */}
             <div className="bg-[#FAFAFA] p-6 rounded-lg shadow-sm w-full max-w-[315px]">
               <div className="flex justify-center mb-4">
@@ -115,7 +115,7 @@ const BenefitsTechnologySection = () => {
           </div>
 
           {/* Middle Column */}
-          <div className="space-y-6 flex flex-col items-center md:items-start">
+          <div className="space-y-6 flex flex-col items-center">
             {/* Most Cost-Effective Card */}
             <div className="bg-gray-50 p-6 rounded-lg shadow-sm w-full max-w-[315px]">
               <h3 className="text-xl font-semibold text-center mb-2 mt-0">
@@ -239,7 +239,7 @@ const BenefitsTechnologySection = () => {
           </div>
 
           {/* Third Column */}
-          <div className="space-y-6 flex flex-col items-center md:items-start">
+          <div className="space-y-6 flex flex-col items-center">
             {/* AI Powered Insights Card */}
             <div className="bg-gray-50 p-6 rounded-lg shadow-sm w-full max-w-[315px]">
               <div className="flex justify-center mb-5">
