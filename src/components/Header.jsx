@@ -5,12 +5,12 @@ const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <header className="w-[1056px] mx-auto p-[8px] rounded-xl bg-white h-[54px] border border-[#E5E7EB]">
+    <header className="w-full max-w-[1056px] mx-auto p-[8px] rounded-xl bg-white h-auto min-h-[54px] border border-[#E5E7EB]">
       <div className="max-w-[1056px] mx-auto">
         <div className="flex items-center justify-between">
           {/* Logo */}
           <div className="flex items-center">
-            <h1 className="text-[20px] ml-2 font-bold">
+            <h1 className="text-[16px] md:text-[20px] ml-2 font-bold">
               <span className="text-black">Cyber</span>
               <span style={{ color: "#C00CF2" }}>Deep</span>
               <span className="text-red-600">360</span>
@@ -109,14 +109,14 @@ const Header = () => {
             <div className="hidden md:flex items-center space-x-4">
               <a
                 href="#"
-                className="px-[13p] py-[9px] w-[61px] h-[38px] text-black text-sm flex justify-center bg-white rounded-[6px]  border border-[#E5E7EB] hover:shadow-md"
+                className="px-[13px] py-[9px] w-[61px] h-[38px] text-black text-sm flex justify-center bg-white rounded-[6px] border border-[#E5E7EB] hover:shadow-md"
               >
                 Login
               </a>
               <a
                 href="#"
                 style={{ backgroundColor: "#C00CF2" }}
-                className="px-[13px] py-[9px] w-[101px] h-[38px] text-white rounded-[6px] shadow-sm hover:shadow-md text-sm"
+                className="px-[13px] py-[9px] w-[101px] h-[38px] text-white rounded-[6px] shadow-sm hover:shadow-md text-sm flex justify-center items-center"
               >
                 Try For Free
               </a>
@@ -138,7 +138,7 @@ const Header = () => {
 
         {/* Mobile menu */}
         {isMenuOpen && (
-          <div className="md:hidden mt-4 border-t pt-4">
+          <div className="md:hidden mt-4 border-t pt-4 pb-4 overflow-y-auto max-h-[calc(100vh-80px)]">
             <nav className="flex flex-col space-y-4">
               <a href="#" className="font-medium hover:text-purple-600">
                 Home
@@ -207,7 +207,7 @@ const Header = () => {
                 <a
                   href="#"
                   style={{ backgroundColor: "#C00CF2" }}
-                  className="px-6 py-3 font-medium text-white rounded-xl shadow-sm hover:shadow-md text-xl text-center"
+                  className="px-6 py-3 font-medium text-white rounded-xl shadow-sm hover:shadow-md text-center"
                 >
                   Try For Free
                 </a>
