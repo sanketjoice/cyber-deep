@@ -3,17 +3,17 @@ import payment from "../assets/payms.png";
 import social from "../assets/social.png";
 const BenefitsTechnologySection = () => {
   return (
-    <div className="bg-[#f7f9f8]  py-16">
+    <div className="bg-[#f7f9f8] py-16">
       <div className="max-w-6xl mx-auto px-4">
-        <h1 className="text-4xl md:text-5xl font-semibold text-center text-gray-900 mb-30">
+        <h1 className="text-4xl md:text-5xl font-semibold text-center text-gray-900 mb-12 md:mb-16">
           Why & Who Benefits from Our Technology?
         </h1>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {/* First Column */}
-          <div className="space-y-6">
+          <div className="space-y-6 flex flex-col items-center md:items-start">
             {/* 99% Accuracy Card */}
-            <div className="bg-[#FAFAFA] p-6 rounded-lg shadow-sm w-[315px]">
+            <div className="bg-[#FAFAFA] p-6 rounded-lg shadow-sm w-full max-w-[315px]">
               <div className="flex justify-center mb-4">
                 <div className="text-red-500">
                   <svg
@@ -73,7 +73,7 @@ const BenefitsTechnologySection = () => {
             </div>
 
             {/* Billing & Payments Card */}
-            <div className="bg-gray-50 p-6 rounded-lg shadow-sm w-[315px]">
+            <div className="bg-gray-50 p-6 rounded-lg shadow-sm w-full max-w-[315px]">
               <div className="h-36 mb-4 -mx-6 -mt-6">
                 <img
                   src={payment}
@@ -115,9 +115,9 @@ const BenefitsTechnologySection = () => {
           </div>
 
           {/* Middle Column */}
-          <div className="space-y-6">
+          <div className="space-y-6 flex flex-col items-center md:items-start">
             {/* Most Cost-Effective Card */}
-            <div className="bg-gray-50 p-6 rounded-lg shadow-sm w-[315px]">
+            <div className="bg-gray-50 p-6 rounded-lg shadow-sm w-full max-w-[315px]">
               <h3 className="text-xl font-semibold text-center mb-2 mt-0">
                 Most Cost-Effective
               </h3>
@@ -149,7 +149,7 @@ const BenefitsTechnologySection = () => {
             </div>
 
             {/* Financial Services Card */}
-            <div className="bg-gray-50 p-6 rounded-lg shadow-sm w-[315px]">
+            <div className="bg-gray-50 p-6 rounded-lg shadow-sm w-full max-w-[315px]">
               <div className="flex justify-center mb-4">
                 <div className="text-red-500">
                   <svg
@@ -206,7 +206,7 @@ const BenefitsTechnologySection = () => {
             </div>
 
             {/* Government & Law Card */}
-            <div className="bg-gray-50 p-6 rounded-lg shadow-sm w-[315px]">
+            <div className="bg-gray-50 p-6 rounded-lg shadow-sm w-full max-w-[315px]">
               <h3 className="text-xl font-semibold text-center mb-2">
                 Government & Law
               </h3>
@@ -239,9 +239,9 @@ const BenefitsTechnologySection = () => {
           </div>
 
           {/* Third Column */}
-          <div className="space-y-6">
+          <div className="space-y-6 flex flex-col items-center md:items-start">
             {/* AI Powered Insights Card */}
-            <div className="bg-gray-50 p-6 rounded-lg shadow-sm w-[315px]">
+            <div className="bg-gray-50 p-6 rounded-lg shadow-sm w-full max-w-[315px]">
               <div className="flex justify-center mb-5">
                 <div className="text-red-500">
                   <svg
@@ -290,7 +290,7 @@ const BenefitsTechnologySection = () => {
             </div>
 
             {/* Social Media Platforms Card */}
-            <div className="bg-gray-50 p-6 rounded-lg shadow-sm w-[315px]">
+            <div className="bg-gray-50 p-6 rounded-lg shadow-sm w-full max-w-[315px]">
               <h3 className="text-xl font-semibold text-center mb-2">
                 Social Media Platforms
               </h3>

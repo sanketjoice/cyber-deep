@@ -22,7 +22,7 @@ const Header = () => {
             <a href="#" className="font-medium hover:text-purple-600">
               Home
             </a>
-            <div className="relative">
+            <div className="relative group">
               <button className="flex items-center font-medium hover:text-purple-600 w-full text-left">
                 Features
                 <svg
@@ -40,22 +40,22 @@ const Header = () => {
                   ></path>
                 </svg>
               </button>
-              <div className="hidden mt-2 pl-4 border-l border-gray-200">
+              <div className="absolute left-0 mt-2 w-48 bg-white rounded-md shadow-lg py-1 z-10 hidden group-hover:block">
                 <a
                   href="#"
-                  className="block py-2 text-sm text-gray-700 hover:text-purple-600"
+                  className="block px-4 py-2 text-sm text-gray-700 hover:bg-purple-100"
                 >
                   Enterprise
                 </a>
                 <a
                   href="#"
-                  className="block py-2 text-sm text-gray-700 hover:text-purple-600"
+                  className="block px-4 py-2 text-sm text-gray-700 hover:bg-purple-100"
                 >
                   Small Business
                 </a>
                 <a
                   href="#"
-                  className="block py-2 text-sm text-gray-700 hover:text-purple-600"
+                  className="block px-4 py-2 text-sm text-gray-700 hover:bg-purple-100"
                 >
                   Government
                 </a>
@@ -143,9 +143,54 @@ const Header = () => {
               <a href="#" className="font-medium hover:text-purple-600">
                 Home
               </a>
-              <a href="#" className="font-medium hover:text-purple-600">
-                Features
-              </a>
+              <div className="relative">
+                <button
+                  className="flex items-center font-medium hover:text-purple-600 w-full text-left"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    const dropdown = e.currentTarget.nextElementSibling;
+                    if (dropdown) {
+                      dropdown.classList.toggle("hidden");
+                    }
+                  }}
+                >
+                  Features
+                  <svg
+                    className="ml-1 w-4 h-4"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      d="M19 9l-7 7-7-7"
+                    ></path>
+                  </svg>
+                </button>
+                <div className="hidden mt-2 pl-4 border-l border-gray-200">
+                  <a
+                    href="#"
+                    className="block py-2 text-sm text-gray-700 hover:text-purple-600"
+                  >
+                    Enterprise
+                  </a>
+                  <a
+                    href="#"
+                    className="block py-2 text-sm text-gray-700 hover:text-purple-600"
+                  >
+                    Small Business
+                  </a>
+                  <a
+                    href="#"
+                    className="block py-2 text-sm text-gray-700 hover:text-purple-600"
+                  >
+                    Government
+                  </a>
+                </div>
+              </div>
               <a href="#" className="font-medium hover:text-purple-600">
                 Pricing
               </a>

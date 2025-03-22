@@ -9,16 +9,16 @@ const MobileAppSection = () => {
             <h2 className="text-4xl md:text-5xl font-semibold text-gray-900 mb-8">
               Manage Your Uploads On the Go
             </h2>
-            <p className="text-lg ml-6 text-gray-700 mb-10 max-w-2xl">
+            <p className="text-lg text-gray-700 mb-10 mx-auto px-4 md:px-0 md:ml-6 max-w-2xl">
               With free Mobile App, you can manage your uploaded content from
               anywhere. Stay connected and stay in control, no matter where your
               day takes you.
             </p>
           </div>
 
-          <div className="w-full justify-center flex gap-4">
+          <div className="w-full justify-center flex flex-col sm:flex-row gap-4">
             {/* App Store button */}
-            <button className="flex items-center justify-center gap-3 w-[205px] h-[74px] bg-white  rounded-lg border border-[#090909] hover:shadow-md transition-all">
+            <button className="flex items-center justify-center gap-3 w-full sm:w-[205px] h-[74px] bg-white rounded-lg border border-[#090909] hover:shadow-md transition-all mx-auto sm:mx-0 max-w-xs">
               <svg
                 viewBox="0 0 24 24"
                 width="32"
@@ -32,7 +32,7 @@ const MobileAppSection = () => {
             </button>
 
             {/* Google Play button */}
-            <button className="flex items-center justify-center gap-3 w-[205px] h-[74px] bg-white  rounded-lg border border-[#090909] hover:shadow-md transition-all">
+            <button className="flex items-center justify-center gap-3 w-full sm:w-[205px] h-[74px] bg-white rounded-lg border border-[#090909] hover:shadow-md transition-all mx-auto sm:mx-0 max-w-xs">
               <svg
                 viewBox="0 0 24 24"
                 width="32"
