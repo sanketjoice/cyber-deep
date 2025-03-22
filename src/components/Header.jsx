@@ -109,14 +109,14 @@ const Header = () => {
             <div className="hidden md:flex items-center space-x-4">
               <a
                 href="#"
-                className="px-[13px] py-[9px] w-[61px] h-[38px] text-black text-sm flex justify-center bg-white rounded-[6px] border border-[#E5E7EB] hover:shadow-md"
+                className="px-[13px] py-[9px] text-black text-sm flex justify-center bg-white rounded-[6px] border border-[#E5E7EB] hover:shadow-md"
               >
                 Login
               </a>
               <a
                 href="#"
                 style={{ backgroundColor: "#C00CF2" }}
-                className="px-[13px] py-[9px] w-[101px] h-[38px] text-white rounded-[6px] shadow-sm hover:shadow-md text-sm flex justify-center items-center"
+                className="px-2 py-[9px] min-w-[90px] text-white rounded-[6px] shadow-sm hover:shadow-md text-sm flex justify-center items-center whitespace-nowrap"
               >
                 Try For Free
               </a>
